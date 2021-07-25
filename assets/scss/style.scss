@@ -1,31 +1,30 @@
 @import 'reset';
-.card{
+.card {
     background-color: #efefef;
     border: 0;
     cursor: pointer;
-
-    &-header{
-        border: 0;
-    }
     
-    &-body{
+    &-header {
+        border: 0;       
+    }
+    &-body {
+                
         border: 0;
         min-width: 100px;
         min-height: 50px;
         background-color: white;
         color: black;
-        box-shadow: 0 0 2px #5f5b5b;  
+        box-shadow: 0 0 2px #5f5b5b;
         transition: all .2s linear;
-        
-        &:hover{
-           background-color: #fbf9f9f9; 
-        //    opacity: .9;
+        &:hover {
+            background-color: #fbf9f9f9;
+            //    opacity: .9;
         }
-        
     }
-    &-footer{
-        .form-control:focus{
+    &-footer {
+    //    position: relative;
+        .form-control:focus {
             box-shadow: none;
-            }
+        }
     }
 }
