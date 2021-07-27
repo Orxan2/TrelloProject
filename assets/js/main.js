@@ -81,6 +81,8 @@ window.addEventListener('load', function (params) {
             box.innerText = text;
             box.addEventListener('dragstart', drag);
             box.addEventListener('dblclick', makeContentEditable);
+            box.addEventListener('dragenter', dragenter);
+            box.addEventListener('dragleave', dragleave);
             card.insertBefore(box, card.querySelector('.card-footer'));
             event.target.nextElementSibling.value = '';
 
